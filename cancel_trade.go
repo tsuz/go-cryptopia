@@ -7,7 +7,7 @@ import (
 )
 
 type CancelTrade struct {
-	Success string
+	Success bool
 	Error   string
 	Data    []int
 }
