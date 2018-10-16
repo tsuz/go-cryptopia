@@ -7,8 +7,9 @@ import (
 )
 
 type CancelTrade struct {
-	OrderID      int
-	FilledOrders []int
+	Success string
+	Error   string
+	Data    []int
 }
 
 // CancelTrade submits an order
