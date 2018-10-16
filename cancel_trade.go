@@ -6,11 +6,7 @@ import (
 	"github.com/pkg/errors"
 )
 
-type CancelTrade struct {
-	Success bool
-	Error   string
-	Data    []int
-}
+type CancelTrade []int
 
 // CancelTrade submits an order
 func (c *Client) CancelTrade(ctx context.Context, market map[string]interface{}) (CancelTrade, error) {
